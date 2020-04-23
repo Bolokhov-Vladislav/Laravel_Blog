@@ -16,6 +16,9 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    {{-- Font Awesome --}}
+    <script src="https://kit.fontawesome.com/4eca67853a.js" crossorigin="anonymous"></script>
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -36,7 +39,7 @@
 											<li class="dropdown">
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Блог</a>
 												<ul class="dropdown-menu" role="menu">
-													<li><a href="#" class="p-2">Категории</a></li>
+													<li><a href="{{ route('admin.category.index') }}" class="p-2">Категории</a></li>
 													<li><a href="#" class="p-2">Материалы</a></li>
 												</ul>
 											</li>
